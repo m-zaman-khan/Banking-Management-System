@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.banking_management_system.MainMenu">
+   <left>
+      <AnchorPane prefHeight="550.0" prefWidth="269.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="556.0" fitWidth="904.0" layoutX="-628.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@5765246_2979327.jpg" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="43.0" layoutY="251.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Main">
+               <font>
+                  <Font name="Poppins Bold" size="72.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="33.0" layoutY="331.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Menu">
+               <font>
+                  <Font name="Poppins Bold" size="72.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="550.0" prefWidth="743.0" style="-fx-background-color: #27294f;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="profile" layoutX="72.0" layoutY="162.0" mnemonicParsing="false" onAction="#seeProfile" prefHeight="51.0" prefWidth="130.0" style="-fx-background-color: orange;" text="Profile" textFill="WHITE">
+               <font>
+                  <Font name="Poppins SemiBold" size="18.0" />
+               </font>
+            </Button>
+            <TextField fx:id="Date" layoutX="225.0" layoutY="47.0" prefHeight="27.0" prefWidth="268.0" style="-fx-background-color: transparent; -fx-border-color: transparent transparent orange transparent; -fx-text-fill: white;">
+               <font>
+                  <Font name="Poppins Bold" size="14.0" />
+               </font></TextField>
+            <Label fx:id="username" layoutX="127.0" layoutY="46.0" text="Date" textFill="WHITE">
+               <font>
+                  <Font name="Poppins SemiBold" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="date" layoutX="129.0" layoutY="96.0" text="Time" textFill="WHITE">
+               <font>
+                  <Font name="Poppins SemiBold" size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="timeField" editable="false" layoutX="225.0" layoutY="95.0" onAction="#currentDate" prefHeight="27.0" prefWidth="270.0" style="-fx-background-color: transparent; -fx-border-color: transparent transparent orange transparent; -fx-text-fill: white;">
+               <font>
+                  <Font name="Poppins SemiBold" size="14.0" />
+               </font></TextField>
+            <Button fx:id="withdraw" layoutX="240.0" layoutY="160.0" mnemonicParsing="false" onAction="#onWithdrawClicked" prefHeight="51.0" prefWidth="130.0" style="-fx-background-color: orange;" text="Withdraw" textFill="WHITE">
+               <font>
+                  <Font name="Poppins SemiBold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="deposit" layoutX="412.0" layoutY="160.0" mnemonicParsing="false" onAction="#onDepositClicked" prefHeight="51.0" prefWidth="130.0" style="-fx-background-color: orange;" text="Deposit" textFill="WHITE">
+               <font>
+                  <Font name="Poppins SemiBold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="transaction" layoutX="72.0" layoutY="249.0" mnemonicParsing="false" onAction="#onTrasactionClicked" prefHeight="51.0" prefWidth="130.0" style="-fx-background-color: orange;" text="Transactions" textFill="WHITE">
+               <font>
+                  <Font name="Poppins SemiBold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="veiw_Balance" layoutX="239.0" layoutY="247.0" mnemonicParsing="false" onAction="#onBalanceClicked" prefHeight="51.0" prefWidth="130.0" style="-fx-background-color: orange;" text="View Balance" textFill="WHITE">
+               <font>
+                  <Font name="Poppins SemiBold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="transfer" layoutX="411.0" layoutY="248.0" mnemonicParsing="false" onAction="#onTransferClicked" prefHeight="51.0" prefWidth="130.0" style="-fx-background-color: orange;" text="Transfer" textFill="WHITE">
+               <font>
+                  <Font name="Poppins SemiBold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="customer_List" layoutX="72.0" layoutY="334.0" mnemonicParsing="false" onAction="#onCustomerlistClicked" prefHeight="51.0" prefWidth="130.0" style="-fx-background-color: orange;" text="Customer List" textFill="WHITE">
+               <font>
+                  <Font name="Poppins SemiBold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="change_Pin" layoutX="240.0" layoutY="335.0" mnemonicParsing="false" onAction="#onChangepinClicked" prefHeight="51.0" prefWidth="130.0" style="-fx-background-color: orange;" text="Change Pin" textFill="WHITE">
+               <font>
+                  <Font name="Poppins SemiBold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="create_Account" layoutX="412.0" layoutY="335.0" mnemonicParsing="false" onAction="#onCreateaccountClicked" prefHeight="51.0" prefWidth="130.0" style="-fx-background-color: orange;" text="Create Account" textFill="WHITE">
+               <font>
+                  <Font name="Poppins SemiBold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="back" layoutX="83.0" layoutY="489.0" mnemonicParsing="false" onAction="#onbackClicked" prefHeight="32.0" prefWidth="74.0" style="-fx-background-color: orange;" text="Back" textFill="WHITE">
+               <font>
+                  <Font name="Poppins SemiBold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="exit" layoutX="453.0" layoutY="487.0" mnemonicParsing="false" onAction="#onexitClicked" prefHeight="32.0" prefWidth="74.0" style="-fx-background-color: orange;" text="Exit" textFill="WHITE">
+               <font>
+                  <Font name="Poppins SemiBold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="loan_request" layoutX="231.0" layoutY="416.0" mnemonicParsing="false" onAction="#onLoanRequestClicked" prefHeight="51.0" prefWidth="148.0" style="-fx-background-color: orange;" text="Loan Request" textFill="WHITE">
+               <font>
+                  <Font name="Poppins SemiBold" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>
